@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Android Js</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/bootstrap.min.css">
+  <script src="../assets/script.js"type="module"></script>
+</head>
+<body>
+  <div id = "fullscreen">
+    <h1 id="title">Flappy Flipped</h1>
+    <button id = "Start">Start</button>
+    <button id = "Settings">Settings</button>
+    <button id = "About">About</button>
+    <button id = "Menu">Back To Menu</button>
+
+    <canvas id = "canvas" width="500" height="850"></canvas>
+    
+
+  </div>
+  <style>
+    body {
+      background-color: #1c1626;
+    }
+    button{
+      vertical-align: top;
+      border: 0;
+      background-color:  #ff2961 ;
+      border-radius: 4px;
+      text-decoration: none;
+      box-shadow: 0 9px #999;
+    }
+    button:active {
+      background-color: #c51f4b;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+  }
+    #title {
+      font-size: 40px;
+      color:   #fefffb ;
+      position: absolute;
+      z-index: +1;
+      justify-content: center;
+      vertical-align: top;
+      top: 20%;
+      text-align: center;
+    }
+    #About {  
+      font-size: 50px;
+      text-align: center;
+      z-index: +1;
+      position: absolute;
+      width: 200px;
+      height: 100px;
+      top: 60%;
+      justify-content: center;
+    }
+    #Menu { 
+      font-size: 16px;
+      text-align: center;
+      z-index: +1;
+      position: absolute;
+      width: 450px;
+      height: 50px;
+      top: 3.5%;
+      justify-content: center;
+      visibility: visible;
+    }
+    #Settings {
+      font-size: 50px;
+      text-align: center;
+      z-index: +1;
+      position: absolute;
+      width: 200px;
+      height: 100px;
+      top: 45%;
+      justify-content: center;
+    }
+    #Start {
+      font-size: 50px;
+      text-align: center;
+      z-index: +1;
+      position: absolute;
+      width: 200px;
+      height: 100px;
+      top: 30%;
+      justify-content: center;
+    }
+      #fullscreen
+         {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-image: url("background.mm.jpg"); */
+        }
+    canvas{
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding-left: 0;
+      padding-right: 0;
+      display: block;
+      overflow: hidden;
+      object-fit: contain;
+      max-width: 100%;
+      max-height: 100%;
+      border: 2px solid white;
+    }
+  </style>
+  <script>
+  </script>
+</body>
+</html>
